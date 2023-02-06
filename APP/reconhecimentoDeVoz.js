@@ -12,6 +12,7 @@ recognition.addEventListener("result", onSpeak);
 function onSpeak(e) {
   chute = e.results[0][0].transcript;
   exibeChuteNaTela(chute);
+  verificaSeOChutePossuiUmValorValido(chute);
 }
 
 // Aprendemos a acessar o conteúdo falado pelo usuário através da API de reconhecimento de voz SpeechRecognition.
